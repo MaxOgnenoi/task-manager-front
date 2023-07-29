@@ -1,10 +1,11 @@
 // components/Auth/Login.js
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+
 import api from '../../services/api';
 
 const Login = () => {
-  const history = useHistory();
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     username: '',
     password: '',
